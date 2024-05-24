@@ -10,17 +10,17 @@ const students = [
     {Id : 120 , Name : "Francesca da Polenta" , Grades : 84},
 ];
 
-console.log(students)
+console.log(students);
 
 const studentsUpperCase = students.map(studentsUp => {
-    return  studentsUp.Name.toUpperCase() // > RICORDA DI INSERIRE LE PARENTESI GRAZIE MILLE ME DEL FUTURO 
+    return  studentsUp.Name.toUpperCase(); // > RICORDA DI INSERIRE LE PARENTESI GRAZIE MILLE ME DEL FUTURO 
 })
 
 console.log(studentsUpperCase)
 
 const goodStudents = students.filter(studentsG => {
     if (studentsG.Grades > 70){
-        return true
+        return true;
     }
 })
 
@@ -28,9 +28,8 @@ console.log(goodStudents)
 
 const goodStudentsId = students.filter(studentsGiD => {
     if (studentsGiD.Grades > 70 && studentsGiD.Id > 120){
-        return true
+        return true;
     }
 })
 
-console.log(goodStudentsId)
-
+console.log(goodStudentsId);
